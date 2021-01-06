@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,initial-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <title>JS交互测试</title>
+    <script type="text/javascript">
+        
+        function ocAction(param) {
+            document.getElementById("ocAction").innerHTML = 'oc->js：' + param;
+        }
+    
+        function buttonAction() {
+            window.webkit.messageHandlers.oc_buttonAction.postMessage("js->oc");
+        }
+    
+    </script>
+    <style type="text/css">
+        
+        body{font-size: .7rem;
+            background: gray !important;
+            padding-left: constant(safe-area-inset-left);
+            padding-right: constant(safe-area-inset-right);
+        }
+        btn1 {
+            position: fixed;
+            top: 100px;
+            left: 20px;
+            width: 200px;
+            height: 50px;
+            background-color: green;
+            border-width: 2px;
+            border-color: blue;
+            border-radius: 25px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+        }
+        p {
+            position: fixed;
+            top: 200px;
+            left: 20px;
+            width: 200px;
+            height: 50px;
+            background-color: green;
+            border-width: 2px;
+            border-color: blue;
+            border-radius: 25px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body style="background-color: gray">
+    
+    <btn1 type="button" onclick="buttonAction()">js->oc</btn1>
+    <p id = "ocAction">oc->js</p>
+    
+</body>
+</html>
+
+

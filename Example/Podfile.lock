@@ -1,0 +1,16 @@
+PODS:
+  - YDDWebView (0.1.0)
+
+DEPENDENCIES:
+  - YDDWebView (from `../`)
+
+EXTERNAL SOURCES:
+  YDDWebView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YDDWebView: 9e0b8399d0ab7dc82a0ed1d285d8102ea270bd01
+
+PODFILE CHECKSUM: 0983f09b3e216ec1ee831e691c7909d45852dbec
+
+COCOAPODS: 1.9.3

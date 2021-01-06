@@ -1,0 +1,6 @@
+framework module Pods_YDDWebView_Tests {
+  umbrella header "Pods-YDDWebView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
