@@ -1,0 +1,6 @@
+framework module YDDWebView {
+  umbrella header "YDDWebView.h"
+
+  export *
+  module * { export * }
+}
